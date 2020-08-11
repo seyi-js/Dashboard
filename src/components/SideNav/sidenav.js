@@ -1,0 +1,33 @@
+import React from 'react'
+import "../../App.css"
+export const sidenav = () => {
+    return (
+        <div className="side-nav-bar">
+            <div className="logo">
+                <h1>Logo</h1>
+            </div>
+            <div className="side-nav-1">
+                <a className="active"><i className="fas fa-home"></i></a>
+                <a><i className="fas fa-user-friends"></i></a>
+                <a><i className="fas fa-credit-card"></i></a>
+
+        </div>
+                <div className="side-nav-2">
+                    <p className="user-1">PW</p>
+                    <p className="user-2">PW</p>
+                    <p className="user-3">PW</p>
+                    <p className="user-4">PW</p>
+                    <p className="user-5">AS</p>
+
+                </div>
+                <div className="side-nav-footer">
+                <a><i className="fas fa-chevron-right"></i></a>
+                    
+
+                </div>
+            </div>
+    )
+}
+
+
+export default sidenav
