@@ -1,4 +1,4 @@
-import React, { useEffect} from 'react';
+import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Design1 from './Design1'
 import Design2 from './Design2'
