@@ -3,7 +3,7 @@ import React from 'react'
 const textbox = ({head}) => {
     return (
         <div key={head.i} class="grid">
-        <div>
+        <div className="heading-div">
             <span>{head.header}</span>
             
             <span>...</span>

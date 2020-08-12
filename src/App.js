@@ -1,8 +1,8 @@
 import React, { useEffect} from 'react';
 import { Switch, Route } from 'react-router-dom';
-import SideBar from '../src/components/SideNav/sidenav'
-import Main from '../src/components/Main/main'
-export const App = ( props ) => {
+import Design1 from './Design1'
+import Design2 from './Design2'
+export const App = (  ) => {
     
 
     
@@ -14,14 +14,23 @@ export const App = ( props ) => {
 
     return (
 
+        <Switch>
+        <React.Fragment>
+
+       
+        <Route exact  path='/' component={Design1} />
+        <Route exact  path='/design2' component={Design2} />
         
-            
-            <div className="wrapper">
-                <SideBar/>
-            <div class="main">
-                <Main/>
-            </div>
-            </div>
+        
+        
+        
+   
+
+
+        
+        
+    </React.Fragment>
+    </Switch>
             
 
       
