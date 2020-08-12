@@ -64,7 +64,11 @@ const textbox = ({head}) => {
                     : null ) ) : <div className="empty-array empty-array-design2">
                     { cases.map( c => (
                         <TextCase key={c.i} c={c}/>
-                    ))}
+                    ) ) }
+                        <div className="new-testcase">
+                            <button className="new-testcase-button">New Test Case</button>
+                            <button className="test-button">Test</button>
+                        </div>
                 </div> }
                     
             </div>

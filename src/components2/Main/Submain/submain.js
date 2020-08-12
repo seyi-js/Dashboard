@@ -30,7 +30,7 @@ const submain = () => {
                         
 
                     </ul>
-                    <ul className="right">
+                    <ul className="right project-deadline">
                     
                     <li class="project-deadline"><i className="far fa-calendar"></i><p>Project Deadline: 10-june-2020</p></li>
                     </ul>

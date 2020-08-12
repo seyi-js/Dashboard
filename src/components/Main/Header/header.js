@@ -1,5 +1,5 @@
 import React from 'react'
-import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
+
 import '../../../App.css'
 
 const header = () => {
@@ -7,9 +7,9 @@ const header = () => {
         <div className="header">
             <div className="svg-bar">
             <svg width="30" height="30">
-            <path d="M0,5 30,5" stroke="#03293d" stroke-width="2"/>
+            <path d="M0,5 30,5" stroke="#03293d" stroke-width="1"/>
             <path d="M0,14 15,14" stroke="#03293d" stroke-width="1"/>
-            <path d="M0,23 25,23" stroke="#03293d" stroke-width="0.5"/>
+            <path d="M0,23 25,23" stroke="#03293d" stroke-width="1"/>
         </svg>
             </div>
             <div className="fcmb">

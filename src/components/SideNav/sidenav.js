@@ -12,7 +12,9 @@ export const sidenav = () => {
         </svg>
             </div>
             <div className="side-nav-1">
-                <a className="active"><i className="fas fa-home"></i></a>
+                <a className=""><i className="fas fa-home"></i></a>
+                <a className="active"><i className="fas fa-code-branch"></i></a>
+
                 <a><i className="fas fa-user-friends"></i></a>
                 <a><i className="fas fa-credit-card"></i></a>
 
