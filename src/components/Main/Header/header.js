@@ -6,9 +6,14 @@ const header = () => {
     return (
         <div className="header">
             <div className="svg-bar">
-                <h1>Here</h1>
+            <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#03293d" stroke-width="2"/>
+            <path d="M0,14 15,14" stroke="#03293d" stroke-width="1"/>
+            <path d="M0,23 25,23" stroke="#03293d" stroke-width="0.5"/>
+        </svg>
             </div>
             <div className="fcmb">
+            <img src="../images/download.png"/>
                 <h3>FCMB: Mobile Banking ...</h3>
             </div>
             <div className="search">
@@ -24,13 +29,14 @@ const header = () => {
                
             </div>
             <div className="profile-image">
-                <img src="../images/10.jpg" />
+                <img src="../images/owner.jpeg" width="40"/>
                 <div className="name-email">
                     <span className="name">John Doe</span>
                     <span className="email">johndoe@hotmail.com</span>
                 </div>
                 <i className="fas fa-chevron-down"></i>
             </div>
+            
         </div>
     )
 }

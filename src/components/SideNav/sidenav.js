@@ -4,7 +4,12 @@ export const sidenav = () => {
     return (
         <div className="side-nav-bar">
             <div className="logo">
-                <h1>Logo</h1>
+            <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="2"/>
+            <path d="M0,14 15,14" stroke="#fff" stroke-width="1"/>
+            <path d="M0,20 30,18" stroke="#fff" stroke-width="1"/>
+            <path d="M0,23 25,23" stroke="#fff" stroke-width="7"/>
+        </svg>
             </div>
             <div className="side-nav-1">
                 <a className="active"><i className="fas fa-home"></i></a>
