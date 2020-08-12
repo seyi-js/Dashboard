@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Textbox from './textbox'
 const submain = () => {
 
    
@@ -8,11 +8,11 @@ const submain = () => {
     const details = [
         {
             "header": 'Backlog',
-            "writeup":['Pixel Perfect Designs: UI must be exactly like the mockup', 'Pixel Perfect Designs: UI must be exactly like the mockup', 'Pixel Perfect Designs: UI must be exactly like the mockup','Pixel Perfect Designs: UI must be exactly like the mockup', 'Pixel Perfect Designs: UI must be exactly like the mockup', 'Pixel Perfect Designs: UI must be exactly like the mockup','Pixel Perfect Designs: UI must be exactly like the mockup', 'Pixel Perfect Designs: UI must be exactly like the mockup', 'Pixel Perfect Designs: UI must be exactly like the mockup']
+            "writeup":['Pixel Perfect Designs: UI must be exactly like the mockup', 'Pixel Perfect Designs: UI must be exactly like the mockup', 'Pixel Perfect Designs: UI must be exactly like the mockup', 'Pixel Perfect Designs: UI must be exactly like the mockup','Pixel Perfect Designs: UI must be exactly like the mockup']
         },
         {
             "header": 'Todo',
-            "writeup":['Pixel Perfect Designs: UI must be exactly like the mockup', 'Pixel Perfect Designs: UI must be exactly like the mockup', 'Pixel Perfect Designs: UI must be exactly like the mockup']
+            "writeup":[]
         },
         {
             "header": 'In Progress',
@@ -56,26 +56,11 @@ const submain = () => {
                 <div className="submain-grids">
                     
                             { details.map( ( head ) => (
-                    <div key={head.i} class="grid">
-                        <div>
-                            <span>{head.header}</span>
-                            
-                            <span>...</span>
-                            
-                                    </div>
-                                    <div className="plus"><i className="fas fa-plus"></i></div>
-                        
-                            { (head.writeup.length !== 0) ? head.writeup.map( writeup => (
-                                (writeup.length !== 0 )?
-                                        <div className="text-box">
-                                            <p key={ head.i }>{ writeup }</p>
-                                        </div>
-                                    :null) ) :null }
-                                    
-                    </div>
-                    ))}
+                    <Textbox key={head.i} head={head} />
+                            ) ) }
+                            <button className="floating"><i className="fas fa-plus"></i></button>
                 </div>
-            
+
             </div>
         </div>
     )
